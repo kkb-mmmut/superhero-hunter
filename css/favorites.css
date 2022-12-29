@@ -1,3 +1,15 @@
+:root{ 
+     --navbar-light-color: #043357;  
+     --navbar-dark-color: #de0000; 
+}
+
+[color-scheme="dark"]{ 
+     --navbar-color: var(--navbar-dark-color); 
+}
+
+[color-scheme="light"]{ 
+     --navbar-color: var(--navbar-light-color); 
+}
 body{
      overflow-x: hidden;
 }
@@ -22,8 +34,9 @@ body{
      gap: 5px;
      z-index: 2;
      backdrop-filter: blur(3px);  
-     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
      /* box-shadow: rgb(38, 57, 67) 0px 30px 20px -10px; */ 
+     box-shadow: var(--navbar-color) 0px 20px 15px, var(--navbar-color) 0px -12px 10px, var(--navbar-color) 0px 4px 6px, var(--navbar-color) 0px 12px 13px, var(--navbar-color) 0px -3px 5px;
 }
 
 .card img{
