@@ -1,0 +1,342 @@
+/* applied to whole website whom this page is linked  */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     cursor: url(../images/thanos.png),auto;
+}
+
+/* root section  */
+
+:root{
+     /* Light Mode Colors */
+     --background-light-color: #cecece;
+     --navbar-light-background-color: #e7e7e7;
+     --navbar-light-color: #043357;
+     --searchBar-light-box-shadow: #043357;
+     --text-light-color: #000;
+     
+     /* Dark Mode Colors */
+     --background-dark-color: #000;
+     --navbar-dark-background-color: #000000;
+     --navbar-dark-color: #de0000;
+     --searchBar-dark-box-shadow: #de0707;
+     --text-dark-color: #fff;
+}
+
+/* light and dark theme section changes whenever applies  */
+[color-scheme="dark"]{
+     --background-color: var(--background-dark-color);
+     --navbar-background-color: var(--navbar-dark-background-color);
+     --navbar-color: var(--navbar-dark-color);
+     --searchBar-box-shadow: var(--searchBar-dark-box-shadow);
+     --text-color: var(--text-dark-color);
+}
+
+[color-scheme="light"]{
+     --background-color: var(--background-light-color);
+     --navbar-background-color: var(--navbar-light-background-color);
+     --navbar-color: var(--navbar-light-color);
+     --searchBar-box-shadow: var(--searchBar-light-box-shadow);
+     --text-color: var(var(--text-light-color));
+}
+
+/* body section of the page  */
+body {
+     background-color: var(--background-color);
+     font-family: 'Kanit', sans-serif;
+     align-items: center;
+     height: 100vh;
+     width: 100vw;
+     
+}
+
+/* responsive changes in the row and col whenever the device width changes it changes too  */
+
+.flex-row {
+     display: flex;
+     flex-direction: row;
+}
+
+.flex-col {
+     display: flex;
+     flex-direction: column;
+} 
+
+/* navigation bar of the page  */
+.navbar {
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     background-color: var(--navbar-background-color);
+     font-weight: 600;
+     letter-spacing: 2px; 
+     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     font-size: 30px;
+     padding: 0 20px;
+}
+
+.navbar-brand {
+     align-items: center; 
+     gap: 10px;
+}
+
+.navbar-brand a{
+     text-decoration: none;
+     color: var(--navbar-color);
+}
+ 
+.logo {
+     width: 3%;
+     min-width: 45px;
+}
+
+.favAndTheme-btn {
+     align-items: center;
+     gap: 10px;
+}
+
+.link-to-different-page{
+     justify-content: center;
+     text-decoration: none;
+}
+
+.btn {
+     border: none;
+     outline: none;
+     padding: 10px;
+     background-color: var(--navbar-color);
+     border-radius: 3px;
+     color: #fff;
+     height: 40px;
+     font-size: 16px;
+     cursor: url(../images/thanos.png),auto;
+
+}
+
+#theme-btn {
+     width: 40px;
+}
+
+#theme-btn i {
+     font-size: 20px;
+}
+
+.fav-btn {
+     font-size: 16px;
+     width: 140px;
+}
+
+.fav-icon {
+     color: #fff; 
+}
+
+.bg-right-side-img {
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     height: 90%; 
+     filter: blur(2px);
+}
+
+ 
+/* seatch input container box section  */
+.search-bar-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 50px;
+     /* background-color: red; */
+}
+
+.search-icon-container {
+     background: var(--navbar-background-color); 
+     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     color: var(--navbar-color);
+     height: 50px;
+     width: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 20px;
+     margin-top: 50px;
+     border-radius: 10px 0 0 10px;
+}
+
+.searchBar-items {
+     min-width: 40%;
+}
+
+#search-bar {
+     background: var(--navbar-background-color);
+     color: var(--navbar-color);
+     min-width: 550px;
+     height: 50px;
+     font-size: 20px;
+     border: none;
+     border-left:0px solid var(--navbar-color); 
+     box-shadow: 0px 0px 7px 0px var(--searchBar-box-shadow);
+     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     border-radius: 0 10px 10px 0;
+     outline: none;
+     padding: 10px;
+     letter-spacing: 2px;
+     margin-top: 50px;
+     z-index: 1;
+}
+
+input::placeholder {
+     color: var(--navbar-color);
+     font-size: 20px;
+}
+
+.img-info {
+     gap: 10px;
+}
+
+.img-info img {
+     width: 65px;
+}
+
+#search-results {
+     min-width: 435px; 
+     margin-top: 30px;
+     list-style: none;
+     z-index: 2;
+     backdrop-filter: blur(4px); 
+}
+
+#search-results li {
+     background: rgba(56, 56, 56, 0.6);
+     height: 60px;
+     color: white;
+     width: 100%;
+}
+.search-hero-icon{
+     height:60px;
+}
+
+#search-results li .hero-name {
+     transition: all 0.2s ease;
+     cursor: url(../images/thanos.png),auto;
+
+}
+
+#search-results li:hover .hero-name {
+     color: var(--navbar-color);
+}
+
+.single-search-result {
+     padding: 0 5px;
+     justify-content: space-between;
+     align-items: center;
+     gap: 10px;
+     border: 1px solid black;
+     width: inherit;
+}
+
+.character-info {
+     text-decoration: none;
+     color: white;
+}
+
+.hero-info {
+     display: flex;
+     align-items: center;
+}
+
+.hero-name { 
+     font-size: 26px;
+}
+
+.buttons {
+     gap: 5px;
+     padding: 0 10px;
+}
+ 
+/* background section  */
+
+.bg-img {
+     width: 80%;
+     min-width: 600px;
+     height: 80%;
+     position: fixed; 
+     bottom: -30px;
+     left: 0;
+     right: 0;
+     margin: auto;
+}
+
+
+/* notification on the delete and added to favorites  */
+.fav-toast,
+.remove-toast {
+     position: absolute;
+     bottom: 100px;
+     font-size: 24px;
+     width: 350px;
+     color: white;
+     letter-spacing: 1px;
+     padding: 10px 20px;
+     z-index: 2;
+     text-align: center;
+     left: 0;
+     right: 0;
+     margin: auto;
+     border-radius: 5px;
+}
+
+.fav-toast[data-visiblity="show"],
+.remove-toast[data-visiblity="show"] {
+     display: block;
+}
+
+.fav-toast[data-visiblity="hide"],
+.remove-toast[data-visiblity="hide"] {
+     display: none;
+}
+
+.fav-toast {
+     background-color:var(--navbar-color);
+     box-shadow: rgba(253, 253, 253, 0.934) 0px 2px 4px 0px, rgba(253, 253, 253, 0.934) 0px 2px 16px 0px; 
+}
+
+.remove-toast {
+     background-color:var(--navbar-color);  
+     box-shadow: rgba(253, 253, 253, 0.934) 0px 2px 4px 0px, rgba(253, 253, 253, 0.934) 0px 2px 16px 0px;
+}
+
+
+/* media queries for responsiveness of the page  */
+
+@media screen and (max-width: 576px) {
+
+     #search-bar {
+          min-width: 435px;
+     }
+
+     .navbar {
+          flex-direction: column;
+          gap: 10px;
+          padding: 10px 0;
+          /* height: 30%; */
+     }
+
+     .navbar-brand {
+          display: flex;
+          flex-direction: column;
+
+     }
+
+     .navbar-brand span {
+          margin-top: -35px;
+     }
+
+     .logo {
+          width: 25%;
+          min-width: 45px;
+     }
+}
+
+ 

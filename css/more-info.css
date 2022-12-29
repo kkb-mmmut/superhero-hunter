@@ -1,0 +1,102 @@
+
+:root{ 
+     --navbar-light-color: #043357;  
+     --navbar-dark-color: #de0000; 
+}
+
+[color-scheme="dark"]{ 
+     --navbar-color: var(--navbar-dark-color); 
+}
+
+[color-scheme="light"]{ 
+     --navbar-color: var(--navbar-light-color); 
+}
+
+/* body section  */
+
+body {
+     width: 100vw;
+     height: 100vh;
+}
+
+.info {
+     justify-content: center;
+     align-items: center;
+     height: 88%;
+}
+
+/* container section of the page */
+#info-container {
+     background-color: rgba(255, 255, 255, 0.621);
+     width: 60%;
+     height: auto;
+     gap: 15px;
+     padding: 15px 50px;
+     backdrop-filter: blur(2px);
+     border-radius: 10px;  
+     box-shadow: var(--navbar-color) 0px 54px 55px, var(--navbar-color) 0px -12px 30px, var(--navbar-color) 0px 4px 6px, var(--navbar-color) 0px 12px 13px, var(--navbar-color) 0px -3px 5px;
+     
+}
+
+/* css to the info about the character and to the cart elements */
+
+.hero-name {
+     justify-content: center;
+}
+
+.hero-img-and-more-info {
+     gap: 30px;
+}
+
+.hero-img {
+     width: 20%;
+     height: auto;
+     min-width: 120px;
+}
+
+.more-info {
+     gap: 15px;
+     font-size: 1.3rem;
+}
+
+.id,.comics,.series,.stories {
+     gap: 5px;
+}
+
+.hero-discription{
+     font-size: 1.1rem;
+} 
+
+.hero-discription b{
+     font-size: 1.3rem;
+}
+
+/* Adding background to the info page  */
+
+.bg-img {
+     z-index: -1;
+}
+
+/* Responsive section  */
+
+@media screen and (max-width: 678px) {
+     .hero-img-and-more-info{
+          flex-direction: column;
+          align-items: center;
+     }
+     .hero-discription{
+          text-align: center;
+     }
+     #info-container{
+          width: 85%;
+     }
+     #landscapeImage{
+          width:100%
+     }
+     .info{
+          height: 100vh;
+     }
+     .more-info{
+          gap: 0px;
+     }
+}

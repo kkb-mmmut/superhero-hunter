@@ -1,0 +1,44 @@
+body{
+     overflow-x: hidden;
+}
+
+.cards-container{
+     justify-content: space-evenly; 
+     flex-wrap: wrap;
+     overflow: hidden;
+}
+.character-info .btn{ 
+     width: 100%;
+}
+
+.card{
+     background-color: hsla(0, 0%, 100%, 0.62);
+     height: 484px;
+     width: 250px;
+     margin: 40px 15px;
+     text-align: center;
+     border: 1px solid black;
+     border-radius: 10px;
+     gap: 5px;
+     z-index: 2;
+     backdrop-filter: blur(3px);  
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     /* box-shadow: rgb(38, 57, 67) 0px 30px 20px -10px; */ 
+}
+
+.card img{
+     border-radius: 10px 10px 0 0;
+}
+
+.name{
+     font-size: 20px; 
+}
+
+.remove-btn{
+     border-radius: 0 0 10px 10px;
+}
+
+.no-characters{
+     font-size: 40px;
+     color: var(--text-color);
+} 
