@@ -30,5 +30,19 @@ that's all !
 ## Home Page (Light Theme)
 ![home-page-light](https://raw.githubusercontent.com/kkb-mmmut/superhero-hunter/main/screenshots/index-light.png)
 
+## Home Page (Dark Theme)
+![home-page-dark](https://raw.githubusercontent.com/kkb-mmmut/superhero-hunter/main/screenshots/index-dark.png)
+  
+## Favourites page with favourites characters (Light Theme)
+![Favourites-page-with-favourites-characters-llight](https://raw.githubusercontent.com/kkb-mmmut/superhero-hunter/main/screenshots/favorite-light.png)
+
+## Favourites page with favourites characters (Dark Theme)
+![Favourites-page-with-favourites-characters-dark](https://raw.githubusercontent.com/kkb-mmmut/superhero-hunter/main/screenshots/favorite-dark.png)
+
+## More Info (Light Theme)
+![more-info-page-light](https://raw.githubusercontent.com/kkb-mmmut/superhero-hunter/main/screenshots/moreinfo-light.png)
+
+## More Info (Dark Theme)
+![more-info-page-dark](https://raw.githubusercontent.com/kkb-mmmut/superhero-hunter/main/screenshots/moreinfo-dark.png)
 
    
