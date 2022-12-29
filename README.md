@@ -1,6 +1,6 @@
 # Superhero Hunter 
  
-<h3>A web application for comic enthusiasts
+<h3>A web app for marvel lovers..
 
 # Deployed Link:
 https://kkb-mmmut.github.io/superhero-hunter/
